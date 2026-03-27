@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.0116, -1.1026]
+      },
+      "properties": {
+        "name": "PlanKraft International",
+        "address": "Masta Villa Plaza, Highpoint, Juja, Nairobi, Kenya",
+        "description": "Headquarters of PlanKraft International. Located in Juja, Kenya."
+      }
+    }
+  ]
+}

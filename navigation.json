@@ -1,0 +1,9 @@
+{
+  "menu": [
+    {"label": "WHO WE ARE", "href": "who-we-are.html"},
+    {"label": "WHAT WE DO", "href": "what-we-do.html"},
+    {"label": "CONTACTS", "href": "contact.html"}
+  ],
+  "logo": "GRASP DESIGN",
+  "tagline": "creating sustainably"
+}

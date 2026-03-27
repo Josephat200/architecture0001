@@ -1,0 +1,160 @@
+<!--
+    News & Events Section for Grasp Design Ltd
+    Featuring: Kenyan Architects Declare Climate & Biodiversity Emergency
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events | Grasp Design Ltd</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .news-container {
+            max-width: 900px;
+            margin: 4.5rem auto 2.5rem auto;
+            background: rgba(30,30,36,0.97);
+            border-radius: 1.2rem;
+            box-shadow: 0 2px 16px #000a;
+            padding: 2.8rem 2.2rem 2.2rem 2.2rem;
+            color: #fffde7;
+            overflow-y: auto;
+            animation: fadeInUp 1.1s cubic-bezier(.23,1.01,.32,1) both;
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: none; }
+        }
+        .news-header {
+            font-size: 2.3rem;
+            font-weight: 800;
+            color: #ffe082;
+            margin-bottom: 2.2rem;
+            letter-spacing: 0.04em;
+            text-align: center;
+        }
+        .ad-feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #232323;
+            border-radius: 1rem;
+            padding: 2rem 1.5rem 1.5rem 1.5rem;
+            margin-bottom: 2.2rem;
+            box-shadow: 0 1px 8px #0005;
+            transition: box-shadow 0.25s, transform 0.25s;
+            animation: fadeInUp 1.3s 0.2s cubic-bezier(.23,1.01,.32,1) both;
+        }
+        .ad-feature:hover {
+            box-shadow: 0 4px 32px #ffe08255;
+            transform: translateY(-6px) scale(1.025);
+        }
+        .ad-logo {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: #ffe082;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.2rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #232323;
+            box-shadow: 0 2px 12px #ffe08255;
+            transition: box-shadow 0.25s, transform 0.25s;
+            animation: fadeInUp 1.4s 0.3s cubic-bezier(.23,1.01,.32,1) both;
+        }
+        .ad-logo:hover {
+            box-shadow: 0 4px 32px #ffe08299;
+            transform: scale(1.08) rotate(-6deg);
+        }
+        .ad-headline {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffe082;
+            margin-bottom: 0.3rem;
+            text-align: center;
+        }
+        .ad-subheadline {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fffde7;
+            margin-bottom: 1.1rem;
+            text-align: center;
+        }
+        .news-article {
+            background: rgba(40,40,48,0.85);
+            border-radius: 0.7rem;
+            padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+            margin-bottom: 2.2rem;
+            box-shadow: 0 1px 8px #0005;
+            transition: box-shadow 0.25s, transform 0.25s;
+            animation: fadeInUp 1.5s 0.4s cubic-bezier(.23,1.01,.32,1) both;
+        }
+        .news-article:hover {
+            box-shadow: 0 4px 32px #ffe08255;
+            transform: translateY(-4px) scale(1.015);
+        }
+        .news-article p {
+            margin: 0 0 0.7rem 0;
+            font-size: 1.08rem;
+            line-height: 1.7;
+        }
+        .read-more-btn {
+            display: inline-block;
+            margin-top: 0.7rem;
+            padding: 0.6rem 1.5rem;
+            background: #ffe082;
+            color: #232323;
+            font-weight: 700;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-size: 1.08rem;
+            letter-spacing: 0.04em;
+            box-shadow: 0 2px 8px #0002;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+            animation: fadeInUp 1.6s 0.5s cubic-bezier(.23,1.01,.32,1) both;
+        }
+        .read-more-btn:hover {
+            background: #232323;
+            color: #ffe082;
+            box-shadow: 0 2px 16px #ffe08255;
+            transform: scale(1.08) translateY(-2px);
+        }
+        @media (max-width: 700px) {
+            .news-container { padding: 1.2rem 0.5rem; }
+            .ad-feature { padding: 1.2rem 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="logo.jpeg" alt="Grasp Design Ltd Logo" class="navbar-badge">
+            <span class="navbar-name">GRASP DESIGN LTD</span>
+        </div>
+        <nav class="navbar-nav">
+            <a href="index.html">Home</a>
+            <a href="#" style="color:#ffe082;font-weight:700;">News & Events</a>
+            <a href="what-we-do.html">What We Do</a>
+            <a href="contact.html">Contacts</a>
+        </nav>
+    </div>
+    <main class="news-container">
+        <div class="news-header">News & Events</div>
+        <section class="ad-feature">
+            <div class="ad-logo">AD</div>
+            <div class="ad-headline">Kenyan Architects Declare</div>
+            <div class="ad-subheadline">Climate &amp; Biodiversity Emergency</div>
+        </section>
+        <article class="news-article">
+            <p><b>Grasp Design Ltd</b> has taken a leadership role in the built environment sector by initiating the establishment of the Kenyan chapter of <b>Architects Declare</b>, a global movement addressing the climate and biodiversity emergency.</p>
+            <p>The firm approached five other local architectural practices to join this international initiative, uniting Kenya’s built environment professionals in a collective response to the urgent challenges of climate change and biodiversity loss.</p>
+            <p>This action demonstrates Grasp Design Ltd’s commitment to socio-environmental impact, global collaboration, and industry leadership—connecting local expertise with a worldwide movement for a more sustainable future.</p>
+            <a class="read-more-btn" href="#">READ MORE</a>
+        </article>
+    </main>
+</body>
+</html>

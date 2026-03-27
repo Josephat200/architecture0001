@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | PLANKRAFT INTERNATIONAL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="logo.jpeg">
+    <style>
+        body { background: #181818; margin: 0; }
+        .contact-hero {
+            width: 100vw;
+            min-height: 38vh;
+            background: linear-gradient(120deg, #2a3440 0%, #3b4654 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+        }
+        .contact-hero-content {
+            z-index: 2;
+            text-align: center;
+            color: #f4f7fa;
+            padding: 3.5rem 1.5rem 2.5rem 1.5rem;
+        }
+        .contact-hero-content h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin: 0 0 0.7rem 0;
+            letter-spacing: 0.04em;
+            text-shadow: 0 2px 16px #2a344088, 0 1px 0 #2a3440;
+        }
+        .contact-hero-content p {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin: 0;
+            color: #bfc9d1;
+            opacity: 0.92;
+        }
+        .contact-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            padding: 0;
+            height: 100vh;
+        }
+        .contact-map {
+            flex: 3 1 0;
+            min-width: 0;
+            display: flex;
+            align-items: stretch;
+            justify-content: flex-end;
+            background: #111;
+            height: 100vh;
+        }
+        .contact-map iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 0 0 0 1.2rem;
+            display: block;
+            filter: grayscale(0.15) brightness(0.98) contrast(1.08);
+        }
+        .contact-info {
+            flex: 1 1 350px;
+            max-width: 420px;
+            min-width: 320px;
+            background: rgba(42, 52, 64, 0.92);
+            backdrop-filter: blur(18px) saturate(140%);
+            -webkit-backdrop-filter: blur(18px) saturate(140%);
+            padding: 2.5rem 2rem 2rem 2rem;
+            border-radius: 1.2rem;
+            box-shadow: 0 4px 32px #000a;
+            color: #f4f7fa;
+            font-size: 1.13rem;
+            height: 75vh;
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            animation: fadeInUp 1.2s cubic-bezier(.23,1.01,.32,1) 0.2s both;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: none; }
+        }
+        .contact-info h2 {
+            color: #4e8cff;
+            margin-top: 0;
+            font-size: 2.1rem;
+            letter-spacing: 0.03em;
+            margin-bottom: 0.7rem;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+        .contact-info h2 .icon {
+            font-size: 2.1rem;
+            color: #4e8cff;
+        }
+        .contact-info a { color: #4e8cff; text-decoration: none; transition: color 0.2s; }
+        .contact-info a:hover { color: #bfc9d1; text-decoration: underline; }
+        .contact-info strong { color: #4e8cff; }
+        .contact-intro {
+            margin-bottom: 1.2rem;
+            font-size: 1.08rem;
+            color: #bfc9d1;
+        }
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+            margin-bottom: 1.1rem;
+            font-size: 1.09rem;
+        }
+        .contact-detail .icon {
+            font-size: 1.35rem;
+            color: #4e8cff;
+            margin-top: 0.1rem;
+        }
+        .social-icons {
+            margin: 2.2rem 0 0.7rem 0;
+            display: flex;
+            gap: 1.1rem;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .social-icons a {
+            transition: transform 0.18s, box-shadow 0.18s;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px #0003;
+        }
+        .social-icons a:hover {
+            transform: scale(1.13) rotate(-6deg);
+            box-shadow: 0 4px 16px #4e8cff55;
+            background: #2a344022;
+        }
+        footer {
+            margin-top: 2.5rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #333;
+            font-size: 0.98rem;
+            color: #4e8cff;
+            text-align: center;
+            opacity: 0.85;
+        }
+        @media (max-width: 900px) {
+            .contact-flex { flex-direction: column; min-height: 100vh; }
+            .contact-map, .contact-info { max-width: 100vw; border-radius: 0; height: 50vh; }
+            .contact-info { height: auto; margin-top: 2vh; margin-bottom: 2vh; }
+            .contact-map iframe { height: 100%; min-height: 50vh; border-radius: 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Contact hero section removed as requested -->
+    <div class="contact-flex">
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps?q=Masta+Villa+Plaza,+Highpoint,+Juja,+Kenya&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-info">
+            <h2><span class="icon">&#128222;</span> Get in Touch</h2>
+            <div class="contact-intro">
+                Give us a call, drop us an email, or visit our office. Our consultants are ready to help you achieve your goals.<br><br>
+                For any enquiries, please reach out!
+            </div>
+            <div class="contact-detail"><span class="icon">&#127970;</span>
+                <div><strong>Location:</strong><br>Masta Villa Plaza, Highpoint, Juja, Kenya</div>
+            </div>
+            <div class="contact-detail"><span class="icon">&#128222;</span>
+                <div><strong>Phone:</strong><br><a href="tel:0708717207">0708717207</a> / <a href="tel:0759303710">0759303710</a></div>
+            </div>
+            <div class="contact-detail"><span class="icon">&#9993;</span>
+                <div><strong>Email:</strong><br><a href="mailto:plankraft.intl@gmail.com">plankraft.intl@gmail.com</a></div>
+            </div>
+            <div class="contact-detail"><span class="icon">&#128205;</span>
+                <div><strong>Physical Address:</strong><br>Masta Villa Plaza, Highpoint, Juja.</div>
+            </div>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook" class="social facebook" target="_blank" rel="noopener" title="Facebook"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.877v-6.987h-2.54v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.632.771-1.632 1.562v1.875h2.773l-.443 2.89h-2.33v6.987C18.343 21.128 22 16.991 22 12z"/></svg></a>
+                <a href="https://www.instagram.com/your-instagram-username" aria-label="Instagram" class="social instagram" target="_blank" rel="noopener" title="Instagram"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.515 2.497 5.782 2.225 7.148 2.163 8.414 2.105 8.794 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.635.363 3.678 1.32c-.957.957-1.189 2.093-1.248 3.374C2.013 5.668 2 6.077 2 12c0 5.923.013 6.332.072 7.613.059 1.281.291 2.417 1.248 3.374.957.957 2.093 1.189 3.374 1.248C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.281-.059 2.417-.291 3.374-1.248.957-.957 1.189-2.093 1.248-3.374.059-1.281.072-1.69.072-7.613 0-5.923-.013-6.332-.072-7.613-.059-1.281-.291-2.417-1.248-3.374C19.365.363 18.229.131 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></a>
+                <a href="https://www.tiktok.com/@your-tiktok-username" aria-label="TikTok" class="social tiktok" target="_blank" rel="noopener" title="TikTok"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M12.75 2v12.25a2.25 2.25 0 1 1-2.25-2.25h1.5a3.75 3.75 0 1 0 3.75 3.75V7.5c.69.44 1.51.7 2.39.7V9c-1.13 0-2.17-.37-3-1v7.25a5.25 5.25 0 1 1-5.25-5.25h1.5a3.75 3.75 0 1 0 3.75 3.75V2h1.5v5.5c.69.44 1.51.7 2.39.7V9c-1.13 0-2.17-.37-3-1V2h-1.5z"/></svg></a>
+                <a href="https://x.com/your-x-username" aria-label="X" class="social x" target="_blank" rel="noopener" title="X"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M22.162 0H1.838C.822 0 0 .822 0 1.838v20.324C0 23.178.822 24 1.838 24h20.324C23.178 24 24 23.178 24 22.162V1.838C24 .822 23.178 0 22.162 0zM7.66 20.454H4.545V9.545H7.66v10.909zm-1.557-12.454a1.818 1.818 0 1 1 0-3.636 1.818 1.818 0 0 1 0 3.636zm14.454 12.454h-3.114v-5.454c0-1.3-.025-2.97-1.818-2.97-1.818 0-2.096 1.422-2.096 2.892v5.532H8.818V9.545h2.993v1.489h.042c.417-.789 1.437-1.62 2.958-1.62 3.167 0 3.75 2.085 3.75 4.797v6.243z"/></svg></a>
+                <a href="#" aria-label="LinkedIn" class="social linkedin" target="_blank" rel="noopener" title="LinkedIn"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M20.447 20.452h-3.554v-5.569c0-1.327-.027-3.037-1.849-3.037-1.851 0-2.132 1.445-2.132 2.939v5.667H9.358V9.545h3.414v1.489h.049c.476-.899 1.637-1.849 3.37-1.849 3.602 0 4.267 2.369 4.267 5.455v6.812zM5.337 8.063a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zm1.777 12.389H3.56V9.545h3.554v10.907z"/></svg></a>
+                <a href="https://wa.me/254708717207" aria-label="WhatsApp" class="social whatsapp" target="_blank" rel="noopener" title="WhatsApp"><svg viewBox="0 0 32 32" width="24" height="24"><path fill="#25D366" d="M16 3C9.373 3 4 8.373 4 15c0 2.65.87 5.1 2.36 7.1L4 29l7.18-2.33C13.1 27.13 14.52 27.5 16 27.5c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.33 0-2.62-.26-3.81-.77l-.27-.11-4.26 1.38 1.4-4.13-.18-.28C7.13 18.01 6.5 16.54 6.5 15c0-5.24 4.26-9.5 9.5-9.5s9.5 4.26 9.5 9.5-4.26 9.5-9.5 9.5zm5.07-7.75c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.36-.26.29-1 1.01-1 2.46s1.02 2.85 1.16 3.05c.14.2 2.01 3.08 4.88 4.2.68.23 1.21.37 1.62.47.68.17 1.3.15 1.79.09.55-.07 1.65-.67 1.89-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.19-.53-.33z"/></svg></a>
+            </div>
+            <footer>
+                &copy; 2026 PLANKRAFT INTERNATIONAL. All rights reserved.
+            </footer>
+        </div>
+    </div>
+</body>
+</body>
+<script src="main.js"></script>
+</html>

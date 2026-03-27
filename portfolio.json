@@ -1,0 +1,39 @@
+{
+  "categories": [
+    "Hospitality & Leisure",
+    "Mixed Use",
+    "Health & Education"
+  ],
+  "portfolio": [
+    {
+      "type": "Institutional/Commercial",
+      "title": "African Union IBAR Campus",
+      "description": "Modern complex with sleek grey facades and vertical louvers."
+    },
+    {
+      "type": "Industrial/Modular",
+      "title": "Modular Campus",
+      "description": "Two-story white modular/container buildings along a paved walkway."
+    },
+    {
+      "type": "Retail",
+      "title": "LITTLE RED",
+      "description": "High-end storefront with luxury apparel and warm lighting."
+    },
+    {
+      "type": "Residential",
+      "title": "Townhouses",
+      "description": "Contemporary multi-story townhouses with geometric rooflines and mixed finishes."
+    },
+    {
+      "type": "Interior Design",
+      "title": "icolo.io Reception",
+      "description": "Reception with organic-shaped white desk and woven wooden ceiling."
+    },
+    {
+      "type": "Masterplanning",
+      "title": "Campus Masterplan",
+      "description": "Aerial 3D rendering of a large-scale campus or residential development in a wooded area."
+    }
+  ]
+}

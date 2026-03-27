@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who We Are | PLANKRAFT INTERNATIONAL</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body::before, body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 22vw;
+            z-index: 0;
+            pointer-events: none;
+            background: rgba(255,255,255,0.10);
+            box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+            backdrop-filter: blur(18px) saturate(140%);
+            -webkit-backdrop-filter: blur(18px) saturate(140%);
+            border-radius: 0 2.5rem 2.5rem 0;
+        }
+        body::before {
+            left: 0;
+            border-radius: 0 2.5rem 2.5rem 0;
+        }
+        body::after {
+            right: 0;
+            border-radius: 2.5rem 0 0 2.5rem;
+        }
+        @media (max-width: 900px) {
+            body::before, body::after { width: 8vw; }
+        }
+        @media (max-width: 700px) {
+            body::before, body::after { display: none; }
+        }
+    </style>
+    <style>
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: none; }
+        }
+        .who-container {
+            max-width: 900px;
+            margin: 3rem auto 2rem auto;
+            background: rgba(30,30,36,0.92);
+            border-radius: 1.2rem;
+            box-shadow: 0 2px 16px #000a;
+            padding: 2.5rem 2rem 2rem 2rem;
+            color: #fffde7;
+            animation: fadeInUp 1.1s cubic-bezier(.23,1.01,.32,1) both;
+        }
+        .who-container h1, .who-container h2 {
+            color: #ffe082;
+            margin-bottom: 0.7rem;
+        }
+        .who-container h1 {
+            font-size: 2.2rem;
+        }
+        .who-container h2 {
+            font-size: 1.3rem;
+        }
+        .who-section {
+            margin-bottom: 2.2rem;
+            animation: fadeInUp 1.2s cubic-bezier(.23,1.01,.32,1) both;
+            transition: box-shadow 0.25s, transform 0.25s;
+        }
+        .who-section:hover {
+            box-shadow: 0 4px 32px #ffe08233;
+            transform: translateY(-4px) scale(1.01);
+        }
+        .who-list {
+            margin: 0.7rem 0 0 1.2rem;
+        }
+        .who-leadership {
+            display: flex;
+            flex-direction: row;
+            gap: 2.5rem;
+            margin-top: 1rem;
+            animation: fadeInUp 1.3s 0.2s cubic-bezier(.23,1.01,.32,1) both;
+        }
+        .who-leader {
+            background: rgba(40,40,48,0.85);
+            border-radius: 0.7rem;
+            padding: 1rem 1.5rem;
+            box-shadow: 0 1px 8px #0005;
+            flex: 1 1 0;
+            transition: box-shadow 0.25s, transform 0.25s;
+            animation: fadeInUp 1.4s 0.3s cubic-bezier(.23,1.01,.32,1) both;
+        }
+        .who-leader:hover {
+            box-shadow: 0 4px 32px #ffe08255;
+            transform: scale(1.04) translateY(-4px);
+        }
+        .who-leader strong {
+            color: #ffe082;
+        }
+        @media (max-width: 700px) {
+            .who-container { padding: 1.2rem 0.5rem; }
+            .who-leadership { flex-direction: column; gap: 1.2rem; }
+        }
+        .who-section .who-list li {
+            transition: color 0.2s, background 0.2s, transform 0.2s;
+        }
+        .who-section .who-list li:hover {
+            color: #232323;
+            background: #ffe082;
+            border-radius: 0.5rem;
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="logo.jpeg" alt="PLANKRAFT Logo" class="navbar-badge">
+            <span class="navbar-name">PLANKRAFT INTERNATIONAL</span>  
+
+
+
+        </div>
+        <nav class="navbar-nav">
+            <a href="index.html">Home</a>
+            <a href="#" style="color:#ffe082;font-weight:700;">Who We Are</a>
+            <a href="what-we-do.html">What We Do</a>
+            <a href="contact.html">Contacts</a>
+        </nav>
+    </div>
+    <main class="who-container">
+        <section class="who-section">
+            <h1 class="who-main-headline">Who We Are</h1>
+            <p class="who-intro">Plankraft International is a dynamic, multi-disciplinary architectural firm based in Juja, Kenya, committed to delivering innovative and sustainable solutions within the built environment. As an emerging practice, the firm distinguishes itself through a thoughtful integration of creative design, technical expertise, and a deep understanding of client needs.</p>
+            <p class="who-intro">At Plankraft International, we view architecture as a powerful tool for shaping experiences, enhancing communities, and creating lasting value. Every project we undertake is approached with precision, professionalism, and a commitment to excellence.</p>
+        </section>
+        <section class="who-section who-approach-section">
+            <h2>Our Approach</h2>
+            <p>Our approach is rooted in <b>collaboration</b>, <b>innovation</b>, and <b>attention to detail</b>. We work closely with clients, consultants, and stakeholders to ensure that each project reflects a clear vision while meeting functional, environmental, and economic requirements.</p>
+            <ul class="who-list">
+                <li><b>Design Excellence</b> – delivering refined and contextually relevant solutions</li>
+                <li><b>Functionality</b> – creating spaces that are efficient, practical, and user-centered</li>
+                <li><b>Sustainability</b> – incorporating environmentally responsible and future-oriented design strategies</li>
+                <li><b>Integrity</b> – upholding the highest standards of professionalism and accountability</li>
+            </ul>
+        </section>
+        <section class="who-section who-services-section">
+            <h2>Our Services</h2>
+            <ul class="who-list">
+                <li><b>Architectural Design</b><br><span class="who-list-desc">Development of innovative, functional, and aesthetically compelling building solutions.</span></li>
+                <li><b>Project Management</b><br><span class="who-list-desc">Professional oversight of projects to ensure timely delivery, cost efficiency, and quality assurance.</span></li>
+                <li><b>Model Making</b><br><span class="who-list-desc">Production of detailed physical and digital models to support visualization and design development.</span></li>
+                <li><b>Interior Design & Landscaping</b><br><span class="who-list-desc">Creation of cohesive interior and exterior environments that enhance both form and function.</span></li>
+            </ul>
+        </section>
+        <section class="who-section who-vision-mission">
+            <div class="who-vm-flex">
+                <div>
+                    <h2>Our Vision</h2>
+                    <p>To be a leading architectural practice recognized for delivering innovative, sustainable, and impactful design solutions across the region and beyond.</p>
+                </div>
+                <div>
+                    <h2>Our Mission</h2>
+                    <p>To provide exceptional architectural and design services through a commitment to creativity, technical excellence, and client satisfaction.</p>
+                </div>
+            </div>
+        </section>
+        <section class="who-section who-philosophy-section">
+            <h2>Our Philosophy</h2>
+            <p>Our work is anchored in the principle of <b>“creating sustainably.”</b> We are dedicated to designing spaces that respond to their environmental context while embracing modern architectural expression. By balancing aesthetics, functionality, and sustainability, we aim to deliver solutions that are both timeless and responsible.</p>
+        </section>
+        <section class="who-section who-leadership-section">
+            <h2>Leadership</h2>
+            <div class="who-leadership">
+                <div class="who-leader">
+                    <strong>Kisia Julius Kibiyi</strong><br>
+                    <span class="who-leader-role">Co-Founder & Lead Operations</span><br>
+                    <span class="who-leader-desc">Responsible for overseeing project execution, operational efficiency, and quality delivery.</span>
+                </div>
+                <div class="who-leader">
+                    <strong>Mangiti Christopher Mwita</strong><br>
+                    <span class="who-leader-role">Co-Founder & Lead Strategy</span><br>
+                    <span class="who-leader-desc">Provides strategic direction, guiding the firm’s vision, partnerships, and long-term development.</span>
+                </div>
+            </div>
+            <p style="margin-top:1.2rem;">Together, they cultivate a culture of innovation, collaboration, and professional excellence.</p>
+        </section>
+        <section class="who-section who-portfolio-section">
+            <h2>Our Portfolio</h2>
+            <ul class="who-list">
+                <li>Residential Developments</li>
+                <li>Commercial and Institutional Projects</li>
+                <li>Retail and Mixed-Use Spaces</li>
+                <li>Interior Design Solutions</li>
+                <li>Master Planning and Concept Development</li>
+            </ul>
+            <p>Each project is executed with a focus on quality, modern design principles, and contextual relevance.</p>
+        </section>
+        <section class="who-section who-location-section">
+            <h2>Our Location</h2>
+            <p>Plankraft International is headquartered at:</p>
+            <address style="font-style:normal;line-height:1.7;">
+                <b>Masta Villa Plaza, Highpoint<br>Juja, Kenya</b>
+            </address>
+            <p>From this base, we serve a growing client base across Nairobi and other regions, delivering tailored architectural solutions across various sectors.</p>
+        </section>
+        <section class="who-section who-why-section">
+            <h2>Why Plankraft International?</h2>
+            <ul class="who-list">
+                <li>Commitment to high standards of design and execution</li>
+                <li>Strong emphasis on sustainability and innovation</li>
+                <li>Client-focused, collaborative project delivery</li>
+                <li>Professional leadership and technical expertise</li>
+                <li>A growing reputation for quality and reliability</li>
+            </ul>
+        </section>
+    </main>
+</main>
+    <footer class="footer-glass">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="logo.jpeg" alt="PLANKRAFT Logo" class="footer-logo">
+                    <span class="footer-title">PLANKRAFT INTERNATIONAL</span>
+                </div>
+                <div class="footer-about">
+                    <span class="footer-about-title">About Us:</span>
+                    <span class="footer-about-text">Award-winning, sustainability-driven architectural firm based in Juja, Kenya. We deliver innovative, contextually relevant solutions for the built environment.</span>
+                </div>
+                <div class="footer-contact">
+                    <span class="footer-contact-title">Contact:</span>
+                    <span class="footer-contact-info">Masta Villa Plaza, Highpoint, Juja, Kenya<br>Email: <a href="mailto:info@plankraft.com">info@plankraft.com</a><br>Phone: <a href="tel:+254712345678">+254 712 345 678</a></span>
+                </div>
+            </div>
+            <div class="footer-mid">
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="who-we-are.html">Who We Are</a>
+                    <a href="what-we-do.html">What We Do</a>
+                    <a href="contact.html">Contacts</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-icon" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="12" cy="12" r="5.5" stroke="#ffe082" stroke-width="1.5"/><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="#ffe082" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1.1" fill="#ffe082"/></svg></a>
+                    <a href="#" class="footer-social-icon" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="3" stroke="#ffe082" stroke-width="1.5"/><rect x="7" y="10" width="2" height="6" fill="#ffe082"/><rect x="11" y="10" width="2" height="6" fill="#ffe082"/><circle cx="8" cy="8" r="1" fill="#ffe082"/></svg></a>
+                    <a href="#" class="footer-social-icon" title="Twitter" aria-label="Twitter"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="12" cy="12" r="10" stroke="#ffe082" stroke-width="1.5"/><path d="M8 13c2.5 1.5 5.5 1.5 8 0" stroke="#ffe082" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-copy">&copy; 2026 Plankraft International. All rights reserved.</div>
+        </div>
+    </footer>
+    <style>
+        .footer-glass {
+            width: 100vw;
+            background: rgba(30,30,36,0.82);
+            box-shadow: 0 -2px 24px #0005;
+            backdrop-filter: blur(14px) saturate(120%);
+            -webkit-backdrop-filter: blur(14px) saturate(120%);
+            border-radius: 2.5rem 2.5rem 0 0;
+            margin-top: 2.5rem;
+            padding: 0;
+            z-index: 10;
+            position: relative;
+            animation: fadeInUp 1.2s 0.5s cubic-bezier(.23,1.01,.32,1) both;
+        }
+        .footer-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2.2rem 1.2rem 1.2rem 1.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.2rem;
+        }
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        .footer-logo {
+            width: 2.2rem;
+            height: 2.2rem;
+            border-radius: 0.5rem;
+            object-fit: cover;
+            box-shadow: 0 2px 8px #0003;
+        }
+        .footer-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #ffe082;
+            letter-spacing: 0.11em;
+            text-shadow: 0 2px 8px #000, 0 1px 0 #fff2;
+        }
+        .footer-links {
+            display: flex;
+            gap: 2.2rem;
+            margin: 0.7rem 0 0.7rem 0;
+        }
+        .footer-links a {
+            color: #fffde7;
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 500;
+            letter-spacing: 0.07em;
+            padding: 0.3rem 1.1rem;
+            border-radius: 1.2rem;
+            background: transparent;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+        }
+        .footer-links a:hover {
+            background: #ffe6b0;
+            color: #181818;
+            box-shadow: 0 2px 12px #ffe08255;
+            transform: scale(1.08) translateY(-2px);
+        }
+        .footer-copy {
+            color: #ffe082;
+            font-size: 0.98rem;
+            opacity: 0.85;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        @media (max-width: 700px) {
+            .footer-content { padding: 1.2rem 0.5rem; }
+            .footer-links { gap: 1.1rem; }
+            .footer-title { font-size: 1.05rem; }
+        }
+    </style>
+</body>
+</html>
